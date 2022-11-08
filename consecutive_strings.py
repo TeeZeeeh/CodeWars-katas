@@ -33,8 +33,6 @@ for string in strn:
 
 # 1st Method: Found max resultant string from consecutively combined k strings
 
-strarr = []
-
 def longest_consec(strarr, k):
     strarr.append('')
     length = len(strarr)
@@ -58,7 +56,7 @@ def longest_consec(strarr, k):
     else:
         return ""
 
-print(longest_consec([], 2))
+print(longest_consec(["zone", "abigail", "theta", "form", "libe"], 3))
 
 
 # 2nd Method: Compared lengths on both sides of largest single string
@@ -66,8 +64,6 @@ print(longest_consec([], 2))
 # Doesn't account for case when largest single string is in middle
 
 '''
-strarr = []
-
 def longest_consec(strarr, k):
     strarr.append('0')
     length = len(strarr)
@@ -86,5 +82,18 @@ def longest_consec(strarr, k):
         return res
     else:
         return ""
-'''
 
+
+# 3rd Method
+
+def longest_consec(strarr, k):
+  index = 0
+  largest = ''
+  while index<(len(strarr)-k):
+    start = ''.join(strarr[index:index+k])
+    largest = max(largest, start, key=len)
+    index += 1
+  return largest
+
+print(longest_consec(["zone", "abigail", "theta", "form", "libsfsde"], 3))
+'''
