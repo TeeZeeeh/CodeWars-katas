@@ -91,9 +91,9 @@ def longest_consec(strarr, k):
     index = 0
     largest = ''
     res = ''
-    if (k<=0) or (k>len(strarr)):
+    if (k <= 0) or (k > len(strarr)):
         return ''
-    while index<=(len(strarr)-k):
+    while index <= (len(strarr) - k):
         start = ''.join(strarr[index:index+k])
         largest = max(largest, start, key=len)
         if largest == start:
