@@ -1,6 +1,6 @@
 # Code by Tajrina Promela
 # Date 7th November 2022, 9:46 AM
-# Program that returns the first longest string consisting of k consecutive strings in array
+# Program that returns the first longest string consisting of k strings taken in array
 
 '''
 # Thinking process

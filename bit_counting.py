@@ -1,6 +1,6 @@
 # Code by Tajrina Promela
 # Date 6th November 2022, 3:57 PM
-# Program that returns the number of bits equal to one in binary from decimal
+# Program that returns the number of bits equal to one in binary from decimal in Python
 
 # Method 1
 b = []

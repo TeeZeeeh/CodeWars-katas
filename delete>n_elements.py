@@ -1,17 +1,16 @@
 # Code by Tajrina Promela
 # Date 7th November 2022, 5:38 PM
-# Program that deletes occurrences of an element if it occurs more than N times
+# Program that deletes occurrences of an element if it occurs more than N times in Python
 
-lis = [1,1,2,3,1,2,1,2,1,3]
-res = []
-occurrences = {}
-n = 2
-
-for i in lis:
-    count = occurrences.setdefault(i, 0)
-    if count >= n:
-        continue
-    res.append(i)
-    occurrences[i] += 1
+def delete_nth(order, max_e):
+    result = []
+    occurrences = {} # New Dictionary
+    for i in order:
+        count = occurrences.setdefault(i, 0)
+        if count >= max_e:
+            continue
+        result.append(i)
+        occurrences[i] += 1
+    return result
     
-print(res)
+print(delete_nth([1,1,3,3,7,2,2,2,2], 3))
