@@ -63,7 +63,6 @@ print(longest_consec(["zone", "abigail", "theta", "form", "libe"], 3))
 # Not consecutively combined
 # Doesn't account for case when largest single string is in middle
 
-
 def longest_consec(strarr, k):
     strarr.append('0')
     length = len(strarr)
@@ -86,19 +85,15 @@ def longest_consec(strarr, k):
 '''
 
 # 3rd Method
-
 def longest_consec(strarr, k):
-    index = 0
     largest = ''
-    res = ''
-    if (k <= 0) or (k > len(strarr)):
+    index = 0
+    if (k<=0) or (k>len(strarr)):
         return ''
     while index <= (len(strarr) - k):
         start = ''.join(strarr[index:index+k])
-        largest = max(largest, start, key=len)
-        if largest == start:
-            res = strarr[index:index+k]
+        largest = max(largest, start, key=len) # key point
         index += 1
     return largest
 
-print(longest_consec(["zones", "abigail", "theta", "form", "libe"], 3))
+print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], -2))
