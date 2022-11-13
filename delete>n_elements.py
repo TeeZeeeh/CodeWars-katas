@@ -12,5 +12,23 @@ def delete_nth(order, max_e):
         result.append(i)
         occurrences[i] += 1
     return result
-    
+
 print(delete_nth([1,1,3,3,7,2,2,2,2], 3))
+
+
+# Doesn't work because we're not dealing with consecutive numbers
+# Dictionary needed
+'''def delete_nth(lis, n):
+    res = lis[:1] # Easier way to initialize a list
+    cursor = lis[0]
+    count = 0
+    for i in lis[1:]:
+        if i == cursor:
+            count += 1
+            if count >= n:
+                continue
+        else:
+            res.append(i)
+            cursor = i
+    return res
+print(delete_nth([1,1,3,3,7,2,2,2,2], 3))'''
