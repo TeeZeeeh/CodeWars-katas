@@ -17,7 +17,7 @@ print(likes(["Alex", "Jacob", "Mark", "Max"]))
 
 
 # Long method 
-def likes(name):
+'''def likes(name):
     if len(name) == 0:
         return 'no one likes this'
     elif len(name) == 1:
@@ -29,4 +29,4 @@ def likes(name):
     elif len(name) > 3:
         return str(name[0]) + ', ' + str(name[1]) + ' and ' + str(len(name)-2) + ' others like this'
 
-print(likes(["Alex", "Jacob", "Mark", "Max"]))
+print(likes(["Alex", "Jacob", "Mark", "Max"]))'''
