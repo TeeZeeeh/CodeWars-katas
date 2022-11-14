@@ -23,6 +23,6 @@ def sum_consecutives(s):
             res.append(i)
             cursor = i
     return res
-    
+
 print(sum_consecutives([1,4,4,0,4,3,3,1]))
 
