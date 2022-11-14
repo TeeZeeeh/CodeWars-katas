@@ -1,6 +1,6 @@
 # Code by Tajrina Promela
 # Date 13th November 2022, 3:42 PM
-# Program to find the like count from list
+# Program to find the like count from list in Python
 
 # Using .format()
 def likes(names): 

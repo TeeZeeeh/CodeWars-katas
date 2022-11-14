@@ -1,6 +1,6 @@
 # Code by Tajrina Promela
 # Date 13th November 2022, 2:30 PM
-# Program that recursively returns the sum of digits until it's a single digit
+# Program that recursively returns the sum of digits until it's a single digit in Python
 
 def move_zeroes(lst):
     res = []
