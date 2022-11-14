@@ -2,6 +2,13 @@
 # Date 14th November 2022, 10:14 AM
 # Program to find the difference in lists in Python
 
+# Short cut
+def array_diff(a, b):
+    return [ele for ele in a if ele not in b]
+print(array_diff([1,2,1], [1]))
+
+
+# Longer method
 def array_diff(a, b):
     res = []
     for item in a:
@@ -10,7 +17,6 @@ def array_diff(a, b):
         else: 
             res.append(item)
     return res
-
 print(array_diff([1,2,1], []))
 
 
